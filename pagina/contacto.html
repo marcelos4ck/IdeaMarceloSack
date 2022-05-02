@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="../styles.css/stylecontacto.css">
+</head>
+<body>
+    <header>
+        <div class="titulos">
+            <h1 class="titulo">SACK DEPORTES</h1>
+            <h2 class="titulo_2">Todo en Indumentaria y Equipamientos Deportivos</h2>
+        </div>
+        <div class="portada">
+            <img class="imagenlogo" src="/imagenes/logo.jpg" alt="Sack Deportes" width="180px" height="180">
+            <link rel="shortcut icon" href="icono/favicon (1).ico"/> 
+        </div>   
+    </header>
+    <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pagina/indumentaria.html">Indumentaria</a></li>
+                <li><a href="/pagina/zapatillas.html">Zapatillas</a></li>
+                <li><a href="/pagina/equipamiento.html">Equipamiento</a></li>
+                <li><a href="#">Contatco</a></li>
+             </ul>
+    </nav>
+    <div class="formulario">
+        <h2>Completa El Siguiente Formulario</h2>
+        <p>Un representante de <strong>Sack Deportes</strong> se comunicará con usted</p>
+                <form action="enviar.php" method="post" enctype="text/plain">
+                        <label for="nombre"></label>
+                        <input class="campos" type="text" name="nombre" placeholder="Nombre" required><br>
+                        <label for="apellido"></label>
+                        <input class="campos" type="text" name="apellido" placeholder="Apellido" required><br>
+                        <label for="telefono"></label>
+                        <input class="campos" type="number" name="telefono" placeholder="Telefono" required><br>
+                        <label for="direccion"></label>
+                        <input class="campos" type="text" name="direccion" placeholder="Direccion" required><br>
+                        <label for="email"></label>
+                        <input class="campos" type="email" name="email" placeholder="Correo" required><br>
+                        <input class="botones" type="submit" value="Enviar">
+                        <input class="botones" type="reset" value="Borrar">
+                </form>
+    </div>
+<footer>
+    <div class="contacto">
+        <h3>Contacto</h3>
+        <h4>0800-555-666</h4>
+    </div>
+    <div class="correo">
+        <h3>Correo</h3>
+        <h4>sackdeportes@gmail.com</h4>
+    </div>
+   
+    <div class="ubicacion">
+        <h3>Ubicacion</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.6175505556178!2d-55.89376732062869!3d-27.36528710734621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be339c31b3f7%3A0x4f2a07a20a18cda6!2sCol%C3%B3n%201587%2C%20N3301JFB%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1642515634328!5m2!1ses-419!2sar" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</footer>   
+</body>
+</html>

@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  color: black;
+  margin: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  height: 200px;
+  width: 100%;
+  border: solid 5px burlywood;
+  border-radius: 20px;
+}
+.titulo {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.titulo__2 {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.portada {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+nav {
+  list-style: none;
+  background-color: black;
+  padding: 0px;
+  text-decoration: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-transform: capitalize;
+  padding: 20px;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+nav li a:hover {
+  color: black;
+  background-color: white;
+}
+section {
+  background-color: beige;
+}
+.nosotros {
+  text-align: center;
+  padding: 10px;
+}
+.nosotros h2 {
+  text-transform: uppercase;
+}
+article {
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+article div {
+  display: inline-block;
+  padding: 50px;
+}
+article div h3 {
+  font-size: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+footer {
+  background-color: wheat;
+  padding: 20px;
+  text-align: center;
+}
+.contacto {
+  width: 40%;
+  display: inline-block;
+  background-color: beige;
+  padding: 50px;
+  text-align: center;
+}
+.correo {
+  width: 40%;
+  background-color: beige;
+  padding: 50px;
+  text-align: center;
+  display: inline-block;
+}
+.ubicacion {
+  width: 100%;
+  background-color: beige;
+  text-align: center;
+  margin-top: 5px;
+}
+#publicidad1 {
+  width: 80%;
+  background-color: blue;
+  height: auto;
+}
+#publicidad2 {
+  width: 150px;
+  background-color: blue;
+  height: auto;
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "publicidad1 article article publicidad2"
+    "publicidad1 article article publicidad2"
+    "footer footer footer footer";
+  grid-template-columns: 150px 1ft 1ft 150px;
+  grid-template-rows: auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+article {
+  grid-area: article;
+}
+#publicidad1 {
+  grid-area: publicidad1;
+}
+#publicidad2 {
+  grid-area: publicidad2;
+}
+footer {
+  grid-area: footer;
+}
+
+@media (max-width: 400px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "publicidad1"
+      "article"
+      "publicidad2"
+      "footer ";
+    grid-template-columns: 1ft;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  .portada {
+    display: none;
+  }
+  body {
+    font-size: 15px;
+  }
+  header {
+    padding: 1px;
+  }
+  header h2 {
+    display: none;
+  }
+  nav {
+    padding: 1px;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    padding: 1px;
+  }
+  section {
+    padding: 1px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+  #grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "publicidad1"
+      "article"
+      "publicidad2"
+      "footer ";
+    grid-template-columns: 1ft;
+    grid-template-rows: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+  .portada {
+    display: none;
+  }
+  header h2 {
+    display: none;
+  }
+  body {
+    font-size: 15px;
+  }
+  header {
+    padding: 1px;
+  }
+  nav {
+    padding: 1px;
+  }
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  article {
+    padding: 1px;
+  }
+  section {
+    padding: 1px;
+  }
+}
